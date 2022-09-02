@@ -125,6 +125,273 @@ const logout = () => {
                                 </JetDropdown>
                             </div>
 
+                            <!-- Students -->
+                            <div class="ml-3 relative">
+                                <JetDropdown align="right" width="48">
+                                    <template #trigger>
+                                        <span class="inline-flex rounded-md">
+                                            <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
+                                                Estudiantes
+
+                                                <svg
+                                                    class="ml-2 -mr-0.5 h-4 w-4"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                >
+                                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </template>
+
+                                    <template #content>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Historial
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Documentos
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Transferencias
+                                        </JetDropdownLink>
+                                    </template>
+                                </JetDropdown>
+                            </div>
+
+                            <!-- Management -->
+                            <div class="ml-3 relative">
+                                <JetDropdown align="right" width="48">
+                                    <template #trigger>
+                                        <span class="inline-flex rounded-md">
+                                            <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
+                                                Administración
+
+                                                <svg
+                                                    class="ml-2 -mr-0.5 h-4 w-4"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                >
+                                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </template>
+
+                                    <template #content>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Grados Parciales
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Matrícula
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Asignación de Materias
+                                        </JetDropdownLink>
+
+                                        <div class="border-t border-gray-100" />
+
+                                        <div class="block px-4 py-2 text-xs text-gray-400">
+                                            Personal
+                                        </div>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Estudiantes
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Profesores
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Tutores
+                                        </JetDropdownLink>
+                                    </template>
+                                </JetDropdown>
+                            </div>
+
+                            <!-- Reports -->
+                            <div class="ml-3 relative">
+                                <JetDropdown align="right" width="48">
+                                    <template #trigger>
+                                        <span class="inline-flex rounded-md">
+                                            <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
+                                                Reportes
+
+                                                <svg
+                                                    class="ml-2 -mr-0.5 h-4 w-4"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                >
+                                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </template>
+
+                                    <template #content>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Notas
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Reporte de Grados
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Reporte de Fallas
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Boletines
+                                        </JetDropdownLink>
+                                    </template>
+                                </JetDropdown>
+                            </div>
+
+                            <!-- Parametrization -->
+                            <div class="ml-3 relative">
+                                <JetDropdown align="right" width="48">
+                                    <template #trigger>
+                                        <span class="inline-flex rounded-md">
+                                            <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
+                                                Parametrización
+                                                <svg
+                                                    class="ml-2 -mr-0.5 h-4 w-4"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                >
+                                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </template>
+
+                                    <template #content>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Institución
+                                        </JetDropdownLink>
+
+                                        <div class="border-t border-gray-100" />
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Documentos
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Caracterización
+                                        </JetDropdownLink>
+
+                                        <div class="border-t border-gray-100" />
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Aspectos
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Áreas
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Asignaturas
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Grados
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Periodos
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Juicio de Valoración
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Criterio
+                                        </JetDropdownLink>
+
+                                        <div class="border-t border-gray-100" />
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Tipos de Documentos
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Géneros
+                                        </JetDropdownLink>
+
+                                        <div class="border-t border-gray-100" />
+
+                                        <div class="block px-4 py-2 text-xs text-gray-400">
+                                            Ubicaciones
+                                        </div>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Ciudades
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Departamentos
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Paises
+                                        </JetDropdownLink>
+
+                                    </template>
+                                </JetDropdown>
+                            </div>
+
+                            <!-- Admin -->
+                            <div class="ml-3 relative">
+                                <JetDropdown align="right" width="48">
+                                    <template #trigger>
+                                        <span class="inline-flex rounded-md">
+                                            <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
+                                                Administrador
+
+                                                <svg
+                                                    class="ml-2 -mr-0.5 h-4 w-4"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                >
+                                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </template>
+
+                                    <template #content>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Usuarios
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Perfiles
+                                        </JetDropdownLink>
+
+                                        <JetDropdownLink :href="route('profile.show')">
+                                            Permisos
+                                        </JetDropdownLink>
+                                    </template>
+                                </JetDropdown>
+                            </div>
+
                             <!-- Settings Dropdown -->
                             <div class="ml-3 relative">
                                 <JetDropdown align="right" width="48">
