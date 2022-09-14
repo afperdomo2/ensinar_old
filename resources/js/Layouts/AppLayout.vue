@@ -347,8 +347,8 @@ const logout = () => {
                                             Departamentos
                                         </JetDropdownLink>
 
-                                        <JetDropdownLink :href="route('profile.show')">
-                                            Paises
+                                        <JetDropdownLink :href="route('countries.index')">
+                                            Países
                                         </JetDropdownLink>
 
                                     </template>

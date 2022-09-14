@@ -24,6 +24,9 @@ Route::get('/', function () {
     ]);
 });
 
+Route::resource('countries', \App\Http\Controllers\CountryController::class)
+    ->middleware('auth:sanctum');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
